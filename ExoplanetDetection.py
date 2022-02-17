@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn import preprocessing
 
 # data set
-data = pd.read_csv("/Users/aryansonik/Desktop/python files/DeepLearning /ExoPlanets/exoTrain.csv")
+data = pd.read_csv("exoTrain copy.csv")
 data_x = data.drop(["LABEL"], axis = 1)
 data_y = data.pop("LABEL")
 normal_data_x = preprocessing.normalize(data_x)
